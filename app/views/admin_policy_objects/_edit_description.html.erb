@@ -1,0 +1,20 @@
+<form id="document_metadata" action="<%= url_for(:action=>"update", :controller=>"assets", :content_type=>"admin_policy_object")%>" method="post" data-resourceType="admin_policy_object" accept-charset="utf-8">
+  <fieldset id="title_fields">
+    <input id="content_type" type="hidden" name="content_type" value="admin_policy_object" />
+    <dl>
+      <dt>
+        <%= fedora_field_label("DC", [:title], "Collection Name:") %>
+      </dt>
+      <dd class="title">
+        <%= fedora_text_field(@document_fedora,"DC", [:title], :multiple=>false) %>
+      </dd>
+      <dt>
+        <%= fedora_field_label("DC", [:title], "Description:") %>
+      </dt>
+      <dd class="language">
+        <%= fedora_text_field(@document_fedora,"DC", [:description], :multiple=>false) %>
+      </dd>
+    </dl>
+  </fieldset>
+  
+</form>
