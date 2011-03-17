@@ -1,7 +1,6 @@
-# require "lyber_core"
 
-# class AdminPolicyObject <  Dor::Base
-class AdminPolicyObject < ActiveFedora::Base
+class AdminPolicyObject <  Dor::Base
+#class AdminPolicyObject < ActiveFedora::Base
  
    has_relationship "members", :is_member_of, :inbound=>true
 
