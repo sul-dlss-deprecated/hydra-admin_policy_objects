@@ -2,6 +2,7 @@
 class AdminPolicyObject <  Dor::Base
 #class AdminPolicyObject < ActiveFedora::Base
  
+     include Hydra::ModelMethods
    has_relationship "members", :is_member_of, :inbound=>true
 
    # Both of these are Part of the dor_objects plugin. 
