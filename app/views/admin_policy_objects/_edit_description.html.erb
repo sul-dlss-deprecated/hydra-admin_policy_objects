@@ -1,4 +1,4 @@
-<form id="document_metadata" action="<%= url_for(:action=>"update", :controller=>"assets", :content_type=>"admin_policy_object")%>" method="post" data-resourceType="admin_policy_object" accept-charset="utf-8">
+<form id="descriptive_metadata" action="<%= url_for(:action=>"update", :controller=>"assets", :content_type=>"admin_policy_object")%>" method="post" data-resourceType="admin_policy_object" accept-charset="utf-8">
   <fieldset id="title_fields">
     <input id="content_type" type="hidden" name="content_type" value="admin_policy_object" />
     <dl>
@@ -16,5 +16,5 @@
       </dd>
     </dl>
   </fieldset>
-  
+  <%= button_to 'Save Description', {},{:id => "submitDescription"} %>
 </form>
