@@ -1,4 +1,5 @@
 <form  action="<%= url_for(:action=>"update", :controller=>"assets", :content_type=>"admin_policy_object")%>" method="post" accept-charset="utf-8">
+  <input type="hidden" name="_method" value="put"/>
   <fieldset>
 	<legend/>
     <input type="hidden" name="content_type" value="admin_policy_object" />   
